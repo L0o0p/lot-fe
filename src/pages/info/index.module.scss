@@ -39,22 +39,22 @@
     input {
         // flex: 1;
         width: 400px;
-        padding:6px;
+        padding: 6px;
         border: none;
-        border-radius: 10px 0px  0px 10px;
+        border-radius: 10px 0px 0px 10px;
         outline: none;
         font-size: 20px;
         border: 2px solid rgb(219, 219, 219);
     }
 
-    button {
+    .button {
         border: none;
-        height: 100;
-        background-color:  gray;;
+        background-color: gray;
+        ;
         color: white;
-        border-radius: 0px  10px 10px 0px;
+        border-radius: 0px 10px 10px 0px;
         padding: 6px 16px 6px 16px;
-        cursor:pointer;
+        cursor: pointer;
         font-weight: 700;
     }
 }

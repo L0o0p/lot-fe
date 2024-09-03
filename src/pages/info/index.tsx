@@ -1,6 +1,8 @@
-import { users } from '../../store';
+import { useAtom } from 'jotai';
+import { usersAtom } from '../../store';
 import styles from './index.module.scss'
 export const InfoPage = () => {
+    const [users] = useAtom(usersAtom)
     return (
         <div className={styles.container}>
 
@@ -10,7 +12,7 @@ export const InfoPage = () => {
                 </div>
                 <div className={styles.search}>
                     <input type="text" />
-                    <button>Search</button>
+                    <button className={styles.button}>Search</button>
                 </div>
                 <div className={styles.form}>
                     <table style={{ width: '100%', borderCollapse: 'collapse' }}>

@@ -5,8 +5,8 @@ export interface Participant {
 }
 
 export interface AwardLog {
-    prizes: string|null;
-    participant: string|null;
+    prizes: string | null;
+    participant: string | null;
 }
 
 export type AwardLogArray = AwardLog[];
@@ -38,111 +38,119 @@ export const useAwardFormData = () => {
     };
 
 
-// 返回对象以确保可以解构使用返回值
-return { awardFormData, updateData, updateParticipant, updatePrizes };
+    // 返回对象以确保可以解构使用返回值
+    return { awardFormData, updateData, updateParticipant, updatePrizes };
 }
 
 export interface UserProfile {
-    Username: string|null;
-    email: string|null;
-    Prize: string 
+    Username: string | null;
+    email: string | null;
+    Prize: string
 }
 
 export type UsersInfoList = UserProfile[];
 
-export  const users =[{
+// export const users =[{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// },{
+//     Username: 'Sgy',
+//     email: '2947232977@qq.com',
+//     Prize: null, 
+//     other:null
+// }]
+
+export const usersAtom = atom([{
     Username: 'Sgy',
     email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-},{
-    Username: 'Sgy',
-    email: '2947232977@qq.com',
-    Prize: null, 
-    other:null
-}]
+    Prize: null,
+    other: null
+},])
+

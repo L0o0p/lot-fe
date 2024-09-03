@@ -35,3 +35,13 @@ button {
     right: 100px;
     height: 100%;
 }
+
+.pointer {
+    height: 50%;
+}
+
+@media (min-width:2160px) {
+    .pointer {
+        height: 100%;
+    }
+}

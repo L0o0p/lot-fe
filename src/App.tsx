@@ -1,11 +1,13 @@
-import { InfoPage } from './pages/info'
-import { Lot } from './pages/lot'
+import { BrowserRouter } from 'react-router-dom'
+import WraperRoutes from './router'
 
 function App() {
   return (
-    // <Lot />
-    <InfoPage/>
+    <BrowserRouter>
+      <WraperRoutes />
+    </BrowserRouter>
   )
 }
 
 export default App
+
