@@ -103,14 +103,19 @@
   padding: 0px 10px 0px 10px;
   box-sizing: border-box;
 }
-.temp > div{
-  background-color: gray;
-  // color: gray;
-  border: 2px solid rgb(177, 177, 177);
+.pre,.nxt{
+  // background-color: rgb(177, 177, 177);;
+  color: gray ;
+  // border: 2px solid rgb(231, 231, 231);
   border-radius: 4px;
-  color: white;
+  // color: white;
   padding: 14px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.page{
+  background-color: none !important;
+  color: gray !important;
 }
 
 .additionalNotes{

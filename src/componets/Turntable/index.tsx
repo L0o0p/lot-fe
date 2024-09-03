@@ -65,7 +65,7 @@ export const WheelOfFortune = () => {
 
     return (
         <div className={styles.turn}>
-            <div
+            {/* <div
                 style={{
                     // width: '300px',
                     // height: '300px',
@@ -76,19 +76,30 @@ export const WheelOfFortune = () => {
                     transform: `rotate(${angle}deg)`,
                     transition: 'transform 5s ease-out'
                 }}
-            />
-            {/* <img
-                className={styles.turn} src="/Turntable/turntable.png" alt="turntable"
-                style={{
-                    width: '300px',
-                    height: '300px',
-                    borderRadius: '50%',
-                    // background: 'conic-gradient(red, blue, yellow)',
-                    transform: `rotate(${angle}deg)`,
-                    transition: 'transform 5s ease-out'
-                }}
-
             /> */}
+            <img
+                className={styles.turntable} src="/Turntable/turntable.png" alt="turntable"
+                id='turntable'
+                // style={{
+                //     // width: '300px',
+                //     // height: '300px',
+                //     width: '90%',
+                //     height: '90%',
+                //     borderRadius: '50%',
+                //     // background: 'conic-gradient(red, blue, yellow)',
+                //     transform: `rotate(${angle}deg)`,
+                //     transition: 'transform 5s ease-out'
+                // }}
+            />
+            <img src="/Turntable/pointer.png" alt="" className={styles.pointer}
+             style={{
+                    // width: '300px',
+                    // height: '300px',
+                    transform: `rotate(${angle}deg)`,
+                    transition: 'transform 5s ease-out',
+                    position:"fixed"
+                }}
+            />
             <button onClick={startSpinning} disabled={isSpinning}>
                 {isSpinning ? '⚙ drawing...' : '🎲 start the draw'}
             </button>

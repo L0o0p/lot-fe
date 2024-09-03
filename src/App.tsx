@@ -24,8 +24,9 @@ function App() {
           <AwardForm/>
         </div>
         <div className={styles.temp}>
-          <div>temp1</div>
-          <div>temp2</div>
+          <div className={styles.pre}>《 Previous -</div>
+          <div className={styles.page}>1/2</div>
+          <div className={styles.nxt}>- Next 》</div>
         </div>
         <div className={styles.additionalNotes}>
           <div className={styles.states}>O(∩_∩)O Explore cutting-edge tech at the Tech Innovators Expo! Discover AI, robotics, and more. Network and witness tomorrow's innovations today. Don't miss it!</div>
