@@ -1,4 +1,4 @@
-import { useAwardFormData } from '../store';
+import { useAwardFormData } from '../../../store';
 import './index.module.scss'
 
 // const data = [

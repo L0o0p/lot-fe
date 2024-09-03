@@ -2,7 +2,7 @@ import  { useEffect, useState } from 'react';
 import styles from './index.module.scss'
 import { participants, prizes } from './infoList';
 import { useAtom } from 'jotai';
-import { selectedParticipantAtom, useAwardFormData } from '../store';
+import { selectedParticipantAtom, useAwardFormData } from '../../../store';
 
 export const WheelOfFortune = () => {
     const [angle, setAngle] = useState(0);
@@ -65,31 +65,9 @@ export const WheelOfFortune = () => {
 
     return (
         <div className={styles.turn}>
-            {/* <div
-                style={{
-                    // width: '300px',
-                    // height: '300px',
-                    width: '90%',
-                    height: '90%',
-                    borderRadius: '50%',
-                    background: 'conic-gradient(red, blue, yellow)',
-                    transform: `rotate(${angle}deg)`,
-                    transition: 'transform 5s ease-out'
-                }}
-            /> */}
             <img
                 className={styles.turntable} src="/Turntable/turntable.png" alt="turntable"
                 id='turntable'
-                // style={{
-                //     // width: '300px',
-                //     // height: '300px',
-                //     width: '90%',
-                //     height: '90%',
-                //     borderRadius: '50%',
-                //     // background: 'conic-gradient(red, blue, yellow)',
-                //     transform: `rotate(${angle}deg)`,
-                //     transition: 'transform 5s ease-out'
-                // }}
             />
             <img src="/Turntable/pointer.png" alt="" className={styles.pointer}
              style={{
